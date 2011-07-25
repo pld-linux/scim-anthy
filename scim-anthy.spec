@@ -1,7 +1,7 @@
 Summary:	SCIM IMEngine for anthy for Japanese input
 Name:		scim-anthy
 Version:	1.2.7
-Release:	0.1
+Release:	1
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://osdn.dl.sourceforge.jp/scim-imengine/37309/%{name}-%{version}.tar.gz
