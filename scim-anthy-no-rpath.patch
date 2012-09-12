@@ -1,0 +1,28 @@
+Description: remove rpath
+Author: Osamu Aoki <osamu@debian.org>
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -76,7 +76,6 @@
+ 
+ anthy_la_LDFLAGS = \
+ 	-avoid-version \
+-	-rpath $(moduledir) \
+ 	-module \
+ 	@LIBTOOL_EXPORT_OPTIONS@ \
+ 	@SCIM_LIBS@ \
+@@ -111,7 +110,6 @@
+ 				  @SCIM_CFLAGS@ \
+ 				  @SCIM_DEBUG_FLAGS@
+ anthy_imengine_setup_la_LDFLAGS = -avoid-version \
+-                                  -rpath $(setupmoduledir) \
+                                   -module \
+                                   @LIBTOOL_EXPORT_OPTIONS@ \
+                                   @SCIM_GTKUTILS_LIBS@ \
+@@ -136,7 +134,6 @@
+ 				    @SCIM_CFLAGS@ \
+ 				    @SCIM_DEBUG_FLAGS@
+ anthy_imengine_helper_la_LDFLAGS  = -avoid-version \
+-                                    -rpath $(setupmoduledir) \
+                                     -module \
+ 				    @LIBTOOL_EXPORT_OPTIONS@ \
+ 				    @GTK2_LIBS@ \
