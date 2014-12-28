@@ -13,7 +13,7 @@ URL:		http://scim-imengine.sourceforge.jp/
 BuildRequires:	anthy-devel >= 6700b-1
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
