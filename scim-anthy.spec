@@ -5,11 +5,13 @@ Version:	1.2.7
 Release:	1
 License:	GPL v2+
 Group:		Libraries
-Source0:	http://osdn.dl.sourceforge.jp/scim-imengine/37309/%{name}-%{version}.tar.gz
+# note: there is also scim-anthy-ss subproject (with 1.3.1 release - snapshot/development version)
+#Source0Download: https://osdn.jp/projects/scim-imengine/releases/p3104
+Source0:	http://dl.osdn.jp/scim-imengine/37309/%{name}-%{version}.tar.gz
 # Source0-md5:	8d06bfd46839c771401b9f176be8818f
 Patch0:		%{name}-no-rpath.patch
 Patch1:		%{name}-gtk3.patch
-URL:		http://scim-imengine.sourceforge.jp/
+URL:		https://osdn.jp/projects/scim-imengine/
 BuildRequires:	anthy-devel >= 6700b-1
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
